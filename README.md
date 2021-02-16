@@ -1,3 +1,26 @@
+# Fork Changes from original [Jon]
+* `launch.json`
+  * Didn't work on windows, seems like assums mac/linux?
+  * Used this launch.json instead: \([master][new-launch-json-master] | [actual commit taken][new-launch-json-commit]\)
+* `.gitignore`
+  * Used [Github node GitIgnore](https://github.com/github/gitignore/blob/master/Node.gitignore)
+* `Readme`
+  * Added this section
+
+
+<!-- Markdown Links -->
+
+[new-launch-json-master]: https://github.com/Lemoncode/jest-vs-code-debugging-example/blob/master/custom-solution-jest-config-file/01-implemented/.vscode/launch.json
+
+[new-launch-json-commit]: https://github.com/Lemoncode/jest-vs-code-debugging-example/blob/1f6a82eb773bc96e8f75709cb41d4da8cc8858ec/custom-solution-jest-config-file/01-implemented/.vscode/launch.json
+
+
+<br />
+<br />
+<br />
+<br />
+
+
 # Sample Project using ts-jest
 
 The goal in this project is to create a TypeScript project that can do all of the following:
@@ -367,3 +390,4 @@ as well as in the code (_e.g.,_ `src/core/functions.ts`) and the debugger will f
 Note that I tested all this on Node 8.x. I've seen issues with debugging using Node 6.x so
 if you are having trouble there, you might consider upgrading (or let, if you manage to fix
 it, submit a PR for this README explaining the fix).
+
