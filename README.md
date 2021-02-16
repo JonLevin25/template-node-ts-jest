@@ -2,6 +2,9 @@
 * `launch.json`
   * Didn't work on windows, seems like assums mac/linux?
   * Used this launch.json instead: \([master][new-launch-json-master] | [actual commit taken][new-launch-json-commit]\)
+* `tsconfig.json`
+  * Changed target to `es2017` + include `"lib": ["es2017"]`
+  * Removed `strict` + `noImplicitAny` restrictions
 * `.gitignore`
   * Used [Github node GitIgnore](https://github.com/github/gitignore/blob/master/Node.gitignore)
 * `Readme`
