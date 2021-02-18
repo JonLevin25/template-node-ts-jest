@@ -1,4 +1,11 @@
 {
+    // Must include jsons in separate glob
+    "include": [
+        "./src/**/*",
+        "./src/**/*.json",
+        "./config/**/*.json"
+    ],
+    // "exclude": ["node_modules", "lib"],
     "compilerOptions": {
         /* Basic Options */
         "target":
@@ -10,7 +17,8 @@
         // "checkJs": true,                       /* Report errors in .js files. */
         // "jsx": "preserve",                     /* Specify JSX code generation: 'preserve', 'react-native', or 'react'. */
         "declaration": true /* Generates corresponding '.d.ts' file. */,
-        // "sourceMap": true,                     /* Generates corresponding '.map' file. */
+        "resolveJsonModule": true, /*resolves json modules imported with "import" */
+        "sourceMap": true,                     /* Generates corresponding '.map' file. */
         // "outFile": "./",                       /* Concatenate and emit output to single file. */
         "outDir": "./lib" /* Redirect output structure to the directory. */,
         // "rootDir": "./",                       /* Specify the root directory of input files. Use to control the output directory structure with --outDir. */
@@ -30,7 +38,7 @@
         "alwaysStrict": true /* Parse in strict mode and emit "use strict" for each source file. */,
 
         /* Additional Checks */
-        "noUnusedLocals": true /* Report errors on unused locals. */,
+        // "noUnusedLocals": true /* Report errors on unused locals. */,
         // "noUnusedParameters": true,            /* Report errors on unused parameters. */
         "noImplicitReturns": true /* Report error when not all code paths in function return a value. */,
         "noFallthroughCasesInSwitch": true /* Report errors for fallthrough cases in switch statement. */,
@@ -56,5 +64,4 @@
         // "experimentalDecorators": true,        /* Enables experimental support for ES7 decorators. */
         // "emitDecoratorMetadata": true,         /* Enables experimental support for emitting type metadata for decorators. */
     },
-    "exclude": ["node_modules", "lib"]
 }
